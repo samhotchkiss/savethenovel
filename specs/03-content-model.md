@@ -26,7 +26,7 @@ An essay is the fundamental unit of content on the site. It is a long-form perso
 These essays are substantial — likely 1,000-5,000+ words. Design and technical considerations:
 
 - **Reading experience** matters: generous line height, comfortable measure (~65 characters), quality typography
-- **Estimated reading time** displayed on cards and essay pages
+- **No reading time estimates.** Per S.E. Elkins: *"We read because it's timeless, not because it's measured."* Do not display "X min read" anywhere on the site.
 - **Progressive rendering** — the full essay loads on its own page, not truncated with "read more"
 - **Print stylesheet** — readers may want to print these; honor that instinct
 - **Anchor links** — for particularly long essays, consider section anchoring
@@ -81,11 +81,12 @@ This creates a natural network effect — bookstores have an incentive to promot
 | By Book Title | `essay.book_title` | `/essays?by=title` |
 | By Book Author | `essay.book_author.name` | `/essays?by=author` |
 | By Contributor | `essay.contributor.name` | `/essays?by=contributor` |
+| By Publication Date | `essay.published_date` | `/essays?by=date` |
 | By Bookstore | `essay.bookstore.name` | (future: `/bookstores`) |
 
 ## Featured Essay
 
-One essay per month is selected as the **Featured Essay**:
+One essay per month is selected as the **Featured Essay** — **12 per year** target. Featured essays are typically from a published author (well-known or emerging, but published):
 
 - Displayed prominently on the homepage
 - Sent to the mailing list subscribers

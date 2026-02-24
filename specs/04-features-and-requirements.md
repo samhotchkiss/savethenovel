@@ -6,12 +6,13 @@
 - Manifesto / mission statement prominently displayed
 - Featured essay of the month with full presentation
 - Recent essays grid (3-4 cards with title, book, contributor, excerpt)
+- **News on Reading** — curated section with links to articles about novel reading, literacy, the literary landscape
 - Call to action: Read, Submit, Subscribe
 - Link to mailing list signup
 
 ### 2. Essay Pages
 - Full long-form essay display with quality typography
-- Reading time estimate
+- **No reading time estimate.** *"We read because it's timeless, not because it's measured."*
 - Book title and author (author name linked if they have a profile)
 - Contributor name (linked to their website/Substack if available)
 - Contributor's favorite independent bookstore (name + link to store website)
@@ -23,7 +24,8 @@
 - Browse by Book Title (alphabetical grouping)
 - Browse by Book Author (alphabetical grouping)
 - Browse by Contributor (alphabetical grouping)
-- Essay cards: title, book, contributor, excerpt, reading time
+- Browse by Publication Date (chronological)
+- Essay cards: title, book, contributor, excerpt
 
 ### 4. Submission Flow
 - Dedicated submission page with clear guidelines
@@ -48,56 +50,67 @@
 - Emails originate from the site (not Substack)
 - Substack cross-post handled separately (manual or automated)
 
-### 8. Responsive Design
+### 8. News on Reading
+- Curated section (homepage + dedicated page) with links to external articles about novel reading
+- Articles about literacy, the state of reading, novel culture, the literary landscape
+- Editorially curated by S.E. Elkins — not an automated feed
+
+### 9. Resources for Readers & Educators
+- Resources for educators who want to teach novels in their classrooms
+- Resources for people who never learned to read long-form in school
+- Potential viral content: "How to Read a Book" guide by S.E. Elkins
+- Links to curricula, reading guides, and advocacy organizations
+
+### 10. Responsive Design
 - Mobile-first reading experience
 - Long-form essays must be comfortable to read on phone, tablet, desktop
 - Generous typography, appropriate line length, good contrast
 
 ## P1 — Should Have (Soon After Launch)
 
-### 9. Featured Archive
+### 11. Featured Archive
 - Chronological archive of previously featured essays
 - Month/year label for each
 - Accessible from footer navigation or a dedicated page
 
-### 10. Bookstore Directory
+### 12. Bookstore Directory
 - Aggregated view of all independent bookstores linked from essays
 - Each bookstore shows: name, location, website, number of essays linking to it
 - Creates goodwill and incentive for bookstores to promote the site
 
-### 11. Search
+### 13. Search
 - Full-text search across essay titles, book titles, authors, contributors
 - Search results show essay cards
 
-### 12. Print Stylesheet
+### 14. Print Stylesheet
 - Clean print layout for essays
 - Readers who love novels also love paper — respect that
 
-### 13. RSS Feed
+### 15. RSS Feed
 - For readers who still use RSS (and these readers definitely do)
 
 ## P2 — Nice to Have (Future)
 
-### 14. Merchandise Shop
+### 16. Merchandise Shop
 - "I come from the library" bumper stickers
 - Potentially other literary-themed merchandise
 - Could be a simple Shopify embed or external link initially
 
-### 15. Events Page
+### 17. Events Page
 - Upcoming bookstore reading events
-- Southwest events (current), East Coast tour (Fall 2026)
+- "Let the Reader Speak" events — Southwest (current), East Coast tour (Fall 2026)
 - Past events archive
 
-### 16. Contributor Profiles
+### 18. Contributor Profiles
 - Dedicated page for contributors with multiple essays
 - Bio, website link, all their essays, their bookstore picks
 
-### 17. Book Pages
+### 19. Book Pages
 - Aggregated view for books with multiple essays
 - All essays about *Beloved*, for example, on a single page
 - Book cover image (if rights allow)
 
-### 18. Automated Substack Sync
+### 20. Automated Substack Sync
 - Automatic cross-posting of featured essay to Substack Notes
 - Or: automated check/copy of Substack email list (as S.E. mentioned)
 
@@ -127,7 +140,7 @@
 
 ### Hosting
 - GitHub Pages compatible (or similar static hosting)
-- Custom domain: savethenovel.com (or similar)
+- Custom domain: savethenovels.org
 - SSL/HTTPS
 
 ### Content Management

@@ -50,7 +50,7 @@ Typography is the single most important design decision for this project.
 ### UI / Navigation
 - Clean sans-serif for navigation, buttons, metadata, labels
 - Small caps or letter-spacing for labels and taxonomy markers
-- Monospace accent for dates, reading time, and other metadata (optional)
+- Monospace accent for dates and other metadata (optional)
 
 ### Type Scale Reference
 | Element | Size (desktop) | Weight |
@@ -59,16 +59,18 @@ Typography is the single most important design decision for this project.
 | Essay title | 32-40px | Bold (700) |
 | Page headings | 28-36px | Bold (700) |
 | Navigation | 14-16px | Medium (500) |
-| Metadata (date, reading time) | 12-14px | Regular (400) |
+| Metadata (date, publication info) | 12-14px | Regular (400) |
 | Cards excerpt | 14-16px | Regular (400) |
 
 ---
 
 ## Color Palette
 
-### Direction: Warm Literary Neutrals
+### Direction: Warm Literary Neutrals — CONFIRMED
 
-The palette should feel like the inside of a good bookstore or the endpapers of a well-made book.
+S.E. confirmed in strategy session: **earth tones, organic feeling, not shiny/high-tech, no cool-tone gradients.** The palette should feel like the inside of a good bookstore or the endpapers of a well-made book.
+
+**S.E. wants to see 2-3 design options** before committing to a final palette. Present style tiles with variations.
 
 ### Suggested Primary Palette
 
@@ -128,6 +130,12 @@ The palette should feel like the inside of a good bookstore or the endpapers of 
 │     └───────┘ └───────┘ └───────┘  │
 │                                     │
 ├─────────────────────────────────────┤
+│                                     │
+│     NEWS ON READING                 │
+│     (Curated links to articles      │
+│      about novel reading)           │
+│                                     │
+├─────────────────────────────────────┤
 │     CALL TO ACTION                  │
 │     Read / Submit / Subscribe       │
 ├─────────────────────────────────────┤
@@ -144,7 +152,6 @@ The palette should feel like the inside of a good bookstore or the endpapers of 
 │        Essay Title                  │
 │        On: Book Title by Author     │
 │        By: Contributor Name         │
-│        12 min read                  │
 │                                     │
 │  ─────────────────────────────────  │
 │                                     │
@@ -186,7 +193,6 @@ The palette should feel like the inside of a good bookstore or the endpapers of 
 │     │ Essay Card                │   │
 │     │ Title / Book / Contributor│   │
 │     │ Excerpt... (2-3 lines)   │   │
-│     │ 8 min read               │   │
 │     └───────────────────────────┘   │
 │     ┌───────────────────────────┐   │
 │     │ Essay Card                │   │
@@ -210,8 +216,9 @@ The essay card appears on the homepage, browse pages, and as related essays. It 
 - Book title and author
 - Contributor name
 - Excerpt (2-3 sentences)
-- Reading time
 - (Optional) Bookstore name
+
+**Note: No reading time estimates.** S.E. was explicit — *"We read because it's timeless, not because it's measured."*
 
 The card should invite clicking without feeling clickbait-y. Warmth over urgency.
 
@@ -295,9 +302,10 @@ The closest analogy is a literary journal — curated, beautiful, meant to be re
 
 ## Deliverables Requested
 
-1. **Style tile** — colors, typography, textures, component samples on one board
-2. **Homepage** — desktop and mobile
+1. **Style tiles — 2-3 options** — S.E. wants to see options. Present 2-3 color/type directions on one board each.
+2. **Homepage** — desktop and mobile (including news on reading section)
 3. **Essay page** — desktop and mobile (the hero deliverable)
-4. **Essay browse/index** — desktop and mobile
+4. **Essay browse/index** — desktop and mobile (with four browse dimensions)
 5. **Submission page** — desktop
-6. **Component library** — cards, buttons, nav, footer, forms, bookstore badge
+6. **Resources page** — desktop (for educators and new readers)
+7. **Component library** — cards, buttons, nav, footer, forms, bookstore badge

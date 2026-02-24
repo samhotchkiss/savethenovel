@@ -3,10 +3,11 @@
 ## Sitemap
 
 ```
-savethenovel.com
+savethenovels.org
 ├── Home (/)
 │   ├── Hero / Manifesto
 │   ├── Featured Essay (rotates monthly)
+│   ├── News on Reading (curated links to articles about novel reading)
 │   └── Call to Action (read, submit, subscribe)
 │
 ├── Essays (/essays)
@@ -14,6 +15,7 @@ savethenovel.com
 │   ├── By Book Title (/essays?by=title)
 │   ├── By Book Author (/essays?by=author)
 │   ├── By Contributor (/essays?by=contributor)
+│   ├── By Publication Date (/essays?by=date)
 │   └── Individual Essay (/essays/:slug)
 │
 ├── Featured Archive (/featured)
@@ -33,10 +35,16 @@ savethenovel.com
     └── Mailing list signup
 ```
 
+### Additional P0 Pages
+```
+├── News (/news)                 # Curated news and articles about novel reading
+└── Resources (/resources)       # For educators and new novel readers
+```
+
 ### Future Pages
 ```
 ├── Shop (/shop)                 # "I come from the library" merch
-└── Events (/events)             # Bookstore readings in the Southwest
+└── Events (/events)             # "Let the Reader Speak" bookstore events
 ```
 
 ## Navigation
@@ -55,13 +63,14 @@ savethenovel.com
 
 ## Content Organization
 
-Essays are the core content unit. They can be discovered through three primary taxonomies:
+Essays are the core content unit. They can be discovered through four primary taxonomies:
 
 | Taxonomy | Description | Example |
 |----------|-------------|---------|
 | **Book Title** | The novel the essay is about | *Beloved*, *One Hundred Years of Solitude* |
 | **Book Author** | The author of that novel | Toni Morrison, Gabriel Garcia Marquez |
 | **Contributor** | The person who wrote the essay | A local author, a reader, a teacher |
+| **Publication Date** | When the essay was published on the site | Newest first, or by month/year |
 
 ### Note on Overlapping Roles
 Some book authors will also be contributors (writing about a different novel that changed *their* life). The data model must handle this cleanly — a person can exist as both a "Book Author" and a "Contributor" without collision.
@@ -77,7 +86,8 @@ Some book authors will also be contributors (writing about a different novel tha
 1. **The Manifesto** — sets the tone immediately
 2. **Featured Essay** — the monthly spotlight, the heart of the site
 3. **Recent Essays** — 3-4 cards showing the latest additions
-4. **Call to Action** — subscribe, submit your story, visit a bookstore
+4. **News on Reading** — curated links to articles about novel reading, literacy, and the literary landscape
+5. **Call to Action** — subscribe, submit your story, visit a bookstore
 
 ### Individual Essay Page
 1. **Essay Title** (which is the letter/essay title, not necessarily the book title)
@@ -89,7 +99,7 @@ Some book authors will also be contributors (writing about a different novel tha
 
 ### Essays Index Page
 - Default: reverse chronological (newest first)
-- Filter/sort by: Book Title (A-Z), Book Author (A-Z), Contributor (A-Z)
+- Filter/sort by: Book Title (A-Z), Book Author (A-Z), Contributor (A-Z), Publication Date
 - Search (stretch goal)
 
 ## URL Structure
@@ -104,5 +114,7 @@ Some book authors will also be contributors (writing about a different novel tha
 | FAQ | `/faq` |
 | Featured Archive | `/featured` |
 | Subscribe | `/subscribe` |
+| News | `/news` |
+| Resources | `/resources` |
 
 Slugs should be human-readable, derived from the essay title or the book title + contributor name.

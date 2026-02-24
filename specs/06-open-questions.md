@@ -25,27 +25,29 @@ If simplicity is paramount, even a basic Eleventy + Decap CMS setup would work b
 
 ---
 
-## 2. Domain Name
+## 2. ~~Singular vs. Plural~~ — RESOLVED
+
+**Answer:** **Save the Novels** (plural). Domain: **savethenovels.org**
+
+---
+
+## 3. Domain Name
 
 **Question:** What domain should the site live at?
 
 **Options to investigate:**
-- savethenovel.com
-- savethenovels.com
-- thenovelreader.com
-- thereaderspeaks.com
-- readerspeaks.com
+**RESOLVED:** Domain registered — **savethenovels.org**
 
-**Recommendation:** Check availability and secure the preferred domain ASAP. `savethenovel.com` (singular) is likely the strongest — it matches the project name directly.
+This also resolves the singular vs. plural question: it's **Save the Novels** (plural).
 
 ---
 
-## 3. Essay Submission Method
+## 4. Essay Submission Method
 
 **Question:** How should contributors submit their essays?
 
 **Options:**
-- **A) Email** — Contributors email their essay to a dedicated address (submit@savethenovel.com). S.E. handles intake manually.
+- **A) Email** — Contributors email their essay to a dedicated address (submit@savethenovels.org). S.E. handles intake manually.
 - **B) Web form** — A form on the site where contributors paste or upload their essay text, along with metadata (bio, bookstore, website).
 - **C) Google Form** — Quick to set up, familiar to everyone, responses collected in a spreadsheet.
 - **D) Submittable / similar platform** — Purpose-built literary submission tool. Some cost.
@@ -56,7 +58,7 @@ Why: At launch, the volume will be manageable — mostly people S.E. already kno
 
 ---
 
-## 4. Essay Length & Display
+## 5. Essay Length & Display
 
 **Question:** These are long-form essays. How do we handle length on the site?
 
@@ -64,13 +66,15 @@ Why: At launch, the volume will be manageable — mostly people S.E. already kno
 - Average essay might be 1,500-3,000 words, some could be 5,000+
 - The whole point is long-form, deep reading — truncation would be hypocritical
 
-**Recommendation:** Display the full essay on its own page, always. No "read more" truncation — that contradicts the mission. On index/browse pages, show a 2-3 sentence excerpt (manually curated, not auto-truncated). Include estimated reading time on cards so readers can choose when to dive in.
+**Recommendation:** Display the full essay on its own page, always. No "read more" truncation — that contradicts the mission. On index/browse pages, show a 2-3 sentence excerpt (manually curated, not auto-truncated).
+
+**No reading time estimates anywhere.** S.E. was explicit: *"We read because it's timeless, not because it's measured."* This is philosophically correct for this project.
 
 For very long essays (5,000+), consider a subtle floating table of contents or progress indicator — but never break the essay across multiple pages.
 
 ---
 
-## 5. Mailing List Provider
+## 6. Mailing List Provider
 
 **Question:** What email service should power the mailing list?
 
@@ -88,7 +92,7 @@ Why: S.E. explicitly said she'd prefer emails to come from the site directly, wi
 
 ---
 
-## 6. Substack Sync
+## 7. Substack Sync
 
 **Question:** S.E. mentioned wanting to check the Substack email list and copy it. How should the Substack and site mailing lists relate?
 
@@ -106,7 +110,7 @@ Trying to automatically sync subscriber lists between platforms is fragile and o
 
 ---
 
-## 7. Rights & Licensing
+## 8. Rights & Licensing
 
 **Question:** What rights does Save the Novel hold to published essays?
 
@@ -124,7 +128,7 @@ If there's any future aspiration to compile essays into a book, include language
 
 ---
 
-## 8. Editorial Voice & Tone
+## 9. Editorial Voice & Tone
 
 **Question:** How much editing will S.E. do on submitted essays?
 
@@ -137,21 +141,24 @@ If there's any future aspiration to compile essays into a book, include language
 
 ---
 
-## 9. Design Aesthetic
+## 10. Design Aesthetic
 
 **Question:** What should the site look and feel like?
 
-**Direction (see Design Brief for full treatment):**
+**Direction (confirmed by S.E. in strategy session):**
+- **Earth tones, organic feeling** — confirmed directly
+- **Not shiny, not high-tech** — no cool-tone gradients, nothing that feels like a tech startup
 - Literary, warm, unhurried
 - Reading-first design — the essays are the product
-- Not corporate, not trendy, not minimalist-to-the-point-of-cold
 - Think: independent bookstore, not Amazon
+
+**S.E. wants to see design samples/options** before committing to a specific palette. Present 2-3 directions.
 
 **Recommendation:** Warm color palette (creams, deep greens, muted earth tones). Serif font for body text (this is a site about novels — serif is correct). Generous whitespace. No visual clutter. The design should feel like opening a book.
 
 ---
 
-## 10. Hosting & Deployment
+## 11. Hosting & Deployment
 
 **Question:** Where should the site be hosted?
 
@@ -167,7 +174,7 @@ Why: Netlify pairs naturally with Decap CMS (they created it). Free tier is more
 
 ---
 
-## 11. Social Media Presence
+## 12. Social Media Presence
 
 **Question:** Does Save the Novel need social media accounts?
 
@@ -181,7 +188,7 @@ Don't spread across every platform. One channel, done well, is plenty. The site 
 
 ---
 
-## 12. Future Merch Shop
+## 13. Future Merch Shop
 
 **Question:** When and how to add the "I come from the library" bumper stickers and other merch?
 
@@ -189,7 +196,7 @@ Don't spread across every platform. One channel, done well, is plenty. The site 
 
 ---
 
-## 13. Multiple Essays About the Same Book
+## 14. Multiple Essays About the Same Book
 
 **Question:** Can more than one person write about the same novel?
 
@@ -197,7 +204,7 @@ Don't spread across every platform. One channel, done well, is plenty. The site 
 
 ---
 
-## 14. Analytics & Privacy
+## 15. Analytics & Privacy
 
 **Question:** How much do we want to track, and how?
 
@@ -213,17 +220,18 @@ Don't spread across every platform. One channel, done well, is plenty. The site 
 
 | # | Question | Urgency | Blocks |
 |---|----------|---------|--------|
+| 2 | ~~Singular vs. plural~~ | **RESOLVED** | savethenovels.org (plural) |
+| 3 | ~~Domain name~~ | **RESOLVED** | savethenovels.org |
 | 1 | Tech stack | **Now** | Everything else |
-| 2 | Domain name | **Now** | Hosting, email, branding |
-| 7 | Rights & licensing | **Before outreach** | Contributor agreements |
-| 3 | Submission method | Before launch | Submission page design |
-| 5 | Mailing list provider | Before dev (May) | Newsletter integration |
-| 9 | Design aesthetic | Before design (March) | Figma work |
-| 10 | Hosting | Before dev (April) | Deployment pipeline |
-| 4 | Essay length | During design | Essay page layout |
-| 6 | Substack sync | Post-launch OK | Nothing critical |
-| 8 | Editorial voice | Ongoing | Nothing technical |
-| 11 | Social media | Pre-launch | Nothing technical |
-| 12 | Merch shop | Post-launch | Nothing |
-| 13 | Same-book essays | Already answered | Nothing |
-| 14 | Analytics | During dev | Nothing critical |
+| 8 | Rights & licensing | **Before outreach** | Contributor agreements |
+| 10 | Design aesthetic | Before design (March) — S.E. wants samples | Figma work |
+| 4 | Submission method | Before launch | Submission page design |
+| 6 | Mailing list provider | Before dev (April) | Newsletter integration |
+| 11 | Hosting | Before dev (April) | Deployment pipeline |
+| 5 | Essay length | Already decided | No reading time — resolved |
+| 7 | Substack sync | Post-launch OK | Nothing critical |
+| 9 | Editorial voice | Ongoing | Nothing technical |
+| 12 | Social media | Pre-launch | Nothing technical |
+| 13 | Merch shop | Post-launch | Nothing |
+| 14 | Same-book essays | Already answered | Nothing |
+| 15 | Analytics | During dev | Nothing critical |

@@ -593,7 +593,7 @@
           <code>book_author</code> &mdash; who wrote it<br>
           <code>contributor</code> &mdash; who wrote the essay<br>
           <code>bookstore</code> &mdash; their favorite indie shop<br>
-          <code>reading_time</code> &mdash; estimated minutes
+          <code>published_date</code> &mdash; when it went live
         </div>
       </div>
     </div>
@@ -601,7 +601,7 @@
 
   <div class="flow-arrow" style="--i:5">
     <svg viewBox="0 0 20 20"><path d="M10 4 L10 16 M6 12 L10 16 L14 12"/></svg>
-    organized by three taxonomies
+    organized by four taxonomies
   </div>
 
   <!-- ═══════════════════════════════════════════════ -->
@@ -609,7 +609,7 @@
   <!-- ═══════════════════════════════════════════════ -->
   <div class="section section--sage" style="--i:6">
     <div class="section-label"><span class="dot"></span> Browse Dimensions</div>
-    <div class="inner-grid inner-grid--three">
+    <div class="inner-grid" style="grid-template-columns: 1fr 1fr;">
       <div class="inner-card">
         <div class="title">By Book Title</div>
         <div class="desc">Find all essays about <em>Beloved</em>, <em>One Hundred Years of Solitude</em>, etc. Multiple essays per book encouraged.</div>
@@ -621,6 +621,10 @@
       <div class="inner-card">
         <div class="title">By Contributor</div>
         <div class="desc">All essays by a given contributor. Name links to their website or Substack.</div>
+      </div>
+      <div class="inner-card">
+        <div class="title">By Publication Date</div>
+        <div class="desc">Chronological browsing. Newest first by default, or explore by month/year.</div>
       </div>
     </div>
   </div>
@@ -643,11 +647,11 @@
     <div class="inner-grid inner-grid--three">
       <div class="inner-card">
         <div class="title"><span class="badge badge--p0">P0</span> Home</div>
-        <div class="desc">Manifesto, featured essay of the month, recent essays grid, call to action</div>
+        <div class="desc">Manifesto, featured essay, recent essays, news on reading, call to action</div>
       </div>
       <div class="inner-card">
         <div class="title"><span class="badge badge--p0">P0</span> Essays</div>
-        <div class="desc">Browse all, filter by title / author / contributor. Individual essay pages.</div>
+        <div class="desc">Browse all, filter by title / author / contributor / date. Individual essay pages.</div>
       </div>
       <div class="inner-card">
         <div class="title"><span class="badge badge--p0">P0</span> Submit</div>
@@ -664,6 +668,14 @@
       <div class="inner-card">
         <div class="title"><span class="badge badge--p0">P0</span> Subscribe</div>
         <div class="desc">Mailing list signup. Monthly featured essay email.</div>
+      </div>
+      <div class="inner-card">
+        <div class="title"><span class="badge badge--p0">P0</span> News</div>
+        <div class="desc">Curated links to articles about novel reading and the literary landscape</div>
+      </div>
+      <div class="inner-card">
+        <div class="title"><span class="badge badge--p0">P0</span> Resources</div>
+        <div class="desc">For educators teaching novels and readers learning long-form reading</div>
       </div>
       <div class="inner-card">
         <div class="title"><span class="badge badge--p1">P1</span> Featured Archive</div>
@@ -827,24 +839,26 @@
   <div class="section section--terracotta" style="--i:18">
     <div class="section-label"><span class="dot"></span> Launch Timeline</div>
     <div class="timeline">
-      <div class="timeline-date">Feb — Mar</div>
-      <div class="timeline-event"><strong>Foundation</strong> — Specs, design brief, wireframes, visual identity, tech decisions</div>
+      <div class="timeline-date" style="color:var(--terracotta); font-weight:700;">This Week</div>
+      <div class="timeline-event"><strong>Domain + Landing Page</strong> — Email capture live, handouts designed for Moab</div>
+      <div class="timeline-date">Early Mar</div>
+      <div class="timeline-event"><strong>Moab Event</strong> — First in-person outreach, test the pitch</div>
+      <div class="timeline-date">Mar</div>
+      <div class="timeline-event"><strong>Design</strong> — Design samples for S.E., wireframes, Figma mockups, visual identity</div>
       <div class="timeline-date">Apr</div>
-      <div class="timeline-event"><strong>Core Build</strong> — Site generator, layouts, essay page template, responsive design</div>
-      <div class="timeline-date">May</div>
-      <div class="timeline-event"><strong>Features</strong> — CMS, submission page, newsletter, bookstore links, SEO, analytics</div>
-      <div class="timeline-date">Jun</div>
-      <div class="timeline-event"><strong>Polish</strong> — Testing, accessibility audit, performance, staging site live</div>
-      <div class="timeline-date">Apr — Jul</div>
-      <div class="timeline-event"><strong>Content Gathering</strong> — Outreach to contributors, editorial review, bookstore verification</div>
-      <div class="timeline-date">Aug 1–15</div>
-      <div class="timeline-event"><strong>Soft Launch</strong> — Content loaded, contributor review, bookstore partner preview</div>
-      <div class="timeline-date">Aug 15–31</div>
-      <div class="timeline-event"><strong>Final Prep</strong> — QA, DNS, press kit, launch announcements drafted</div>
+      <div class="timeline-event"><strong>Build</strong> — All P0 pages, CMS, newsletter, bookstore links, SEO, analytics</div>
+      <div class="timeline-date" style="color:var(--accent); font-weight:700;">May 1</div>
+      <div class="timeline-event" style="font-weight:600;">Site Ready — private preview for publishers, authors, bookstores</div>
+      <div class="timeline-date">May 22</div>
+      <div class="timeline-event"><strong>Santa Fe Lit Festival</strong> — Show site, build buzz, gather feedback</div>
+      <div class="timeline-date">Mar — Aug</div>
+      <div class="timeline-event"><strong>Community Building</strong> — Bookstore visits, stickers, test events, contributor outreach</div>
+      <div class="timeline-date">Jun — Aug</div>
+      <div class="timeline-event"><strong>Content</strong> — Essays received, editorial review, content loaded, QA</div>
       <div class="timeline-date" style="color:var(--terracotta); font-weight:700;">Sep 1</div>
-      <div class="timeline-event" style="font-weight:700; font-size:14px;">LAUNCH — Site live, first newsletter, notify contributors and bookstores</div>
+      <div class="timeline-event" style="font-weight:700; font-size:14px;">PUBLIC LAUNCH — Site live, first newsletter, notify contributors and bookstores</div>
       <div class="timeline-date">Oct — Dec</div>
-      <div class="timeline-event"><strong>East Coast Tour</strong> — Bookstore events, new essays, growing community</div>
+      <div class="timeline-event"><strong>East Coast Tour</strong> — "Let the Reader Speak" bookstore events, new essays, growing community</div>
     </div>
   </div>
 

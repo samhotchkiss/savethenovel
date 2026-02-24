@@ -3,6 +3,11 @@
 ## Project Name
 **Save the Novel** — *The Reader Speaks*
 
+**Open question:** Singular ("Save the Novel") vs. plural ("Save the Novels") — to be decided.
+
+## Event Name
+**Let the Reader Speak** — the name for live bookstore events, a Save the Novel production.
+
 ## Tagline
 *"Let the reader speak!"*
 
@@ -44,7 +49,7 @@ The core content is a collection of **personal essays / letters to the authors**
 
 ## Origin Story
 
-Several bookstores in the Southwest have agreed to let S.E. Elkins host events where local authors share the story of the novel that changed their lives. These personal stories of novel-reading serve as a call to action:
+Several bookstores in the Southwest have agreed to let S.E. Elkins host **"Let the Reader Speak"** events where local authors share the story of the novel that changed their lives. These personal stories of novel-reading serve as a call to action:
 
 - To read more
 - To read deeply
@@ -56,6 +61,10 @@ Each published essay will be linked to the contributor's favorite independent bo
 ## Mission Statement
 
 To give readers a voice to promote the literature that changed their lives, to collect the stories of reading, to broadcast the rich blessing of literature.
+
+## Featured Essays
+
+The site will publish **12 featured essays per year** — one per month, typically from a published author (well-known or emerging, but published). These are the centerpiece of the monthly newsletter.
 
 ## Project Lead
 

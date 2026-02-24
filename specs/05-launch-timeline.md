@@ -1,73 +1,98 @@
 # Save the Novel — Launch Timeline
 
-**Launch Date: September 1, 2026**
+**Site Ready: May 1, 2026** (for private preview at Santa Fe Lit Festival May 22)
+**Public Launch: September 1, 2026**
 **Fall 2026: East Coast Bookstore Tour**
 
 Working backwards from launch day.
 
 ---
 
-## Phase 1: Foundation (Now — March 31)
+## Phase 0: Immediate (This Week — Feb 28)
 
-### February 24 — March 15: Project Spec & Design
+- [x] **Register domain** — savethenovels.org (done)
+- [ ] **Landing page live** — simple page with email capture: "Save the Novel is coming. Sign up to be the first to know."
+- [ ] **Physical handout designed** — sticker, card, or flyer with domain + QR code for Moab event
+
+### Moab Event (First Week of March)
+- [ ] S.E. has handouts with the landing page URL
+- [ ] Start collecting email addresses in person
+- [ ] Test the pitch: talk about Save the Novel, gauge reactions
+
+---
+
+## Phase 1: Foundation & Design (March)
+
+### March 1 — March 15: Design Kickoff
 - [x] Complete project specs and documentation (this repo)
 - [ ] Finalize tech stack decision (see Open Questions)
-- [ ] Domain registration (savethenovel.com or variant)
-- [ ] Design brief delivered to designer
+- [ ] Design brief delivered to designer (done — see 07-design-brief.md)
+- [ ] **Design samples / options presented to S.E.** (she wants to see options)
 - [ ] Begin visual identity: logo, color palette, typography
-- [ ] Wireframes for key pages (Home, Essay, Browse, Submit)
+- [ ] Wireframes for key pages (Home, Essay, Browse, Submit, News, Resources)
 
-### March 15 — March 31: Design
+### March 15 — March 31: Design & Dev Setup
 - [ ] Figma mockups for all P0 pages
 - [ ] Mobile and desktop layouts
 - [ ] Design review and approval
 - [ ] Design system / component library established
+- [ ] Development environment and repo setup
+- [ ] Static site generator configured (or CMS selected and set up)
 
 ---
 
-## Phase 2: Build (April 1 — June 30)
+## Phase 2: Build (April 1 — April 30)
 
-### April 1 — April 30: Core Development
-- [ ] Development environment and repo setup
-- [ ] Static site generator configured (or CMS selected and set up)
+**Hard deadline: Site functionally complete by May 1.**
+
+### April 1 — April 15: Core Build
 - [ ] Base layout and navigation
-- [ ] Homepage implementation
+- [ ] Homepage implementation (manifesto, featured essay, recent essays, news section)
 - [ ] Essay page template (the most important page — nail the reading experience)
-- [ ] Essay browsing / index page with taxonomy filters
+- [ ] Essay browsing / index page with four taxonomy filters
 - [ ] Responsive design across breakpoints
 
-### May 1 — May 31: Content Infrastructure & Features
+### April 15 — April 30: Features & Polish
 - [ ] CMS or content management workflow finalized
 - [ ] Submission page and FAQ
 - [ ] About page
-- [ ] Mailing list integration (Mailchimp, Buttondown, ConvertKit, or similar)
+- [ ] News on Reading page/section
+- [ ] Resources for Readers & Educators page
+- [ ] Mailing list integration (Buttondown, ConvertKit, or similar)
 - [ ] Newsletter template for monthly featured essay
 - [ ] Bookstore link system
 - [ ] RSS feed
 - [ ] SEO: meta tags, open graph, structured data, sitemap
 - [ ] Analytics setup (Plausible or similar)
-
-### June 1 — June 30: Polish & Testing
 - [ ] Cross-browser testing
-- [ ] Accessibility audit (WCAG 2.1 AA)
-- [ ] Performance optimization (Core Web Vitals)
-- [ ] Print stylesheet for essays
-- [ ] 404 page and error handling
+- [ ] Accessibility pass (WCAG 2.1 AA)
 - [ ] SSL certificate and hosting configuration
-- [ ] Staging site live for review
 
 ---
 
-## Phase 3: Content Gathering (April 1 — August 15)
+## Milestone: Site Ready — May 1
 
-This runs parallel to development.
+Site is functionally complete and can be shown privately to bookstore partners, publishers, and authors.
 
-### April — May: Outreach
+---
+
+## Phase 3: Community Building & Content (March — August)
+
+This runs parallel to design and development. **This is S.E.'s primary job during this period.**
+
+### March — April: Outreach
+- [ ] Visit bookstores in Santa Fe and Albuquerque — leave stickers, build relationships
+- [ ] Email outreach to authors and potential contributors
+- [ ] Run test "Let the Reader Speak" events at local bookstores
+- [ ] Build buzz across Southwest literary community
+- [ ] Begin soliciting the 12 featured essays (from published authors)
+
+### May: Santa Fe Lit Festival (May 22)
+- [ ] **Show the site privately** to publishers, authors, bookstore owners
+- [ ] Collect feedback, refine
 - [ ] Finalize contributor list from Southwest bookstore events
 - [ ] Send contributor guide: what we need (essay, bio, website, bookstore pick)
 - [ ] Set deadlines for contributions (aim for essays in-hand by July 15)
-- [ ] Begin soliciting essays from additional authors and readers
-- [ ] Photograph contributors at events (if applicable)
 
 ### June — July: Editorial
 - [ ] First essays received and reviewed
@@ -75,6 +100,7 @@ This runs parallel to development.
 - [ ] Collect contributor metadata (bio, website, bookstore)
 - [ ] Verify bookstore information and links
 - [ ] Select launch-day featured essay
+- [ ] Continue polish and iteration on the site based on Lit Festival feedback
 
 ### August 1 — August 15: Content Load
 - [ ] All launch essays entered into CMS / site
@@ -82,6 +108,7 @@ This runs parallel to development.
 - [ ] All bookstore links verified
 - [ ] Featured essay for September selected and queued
 - [ ] First newsletter drafted and ready to send
+- [ ] News on Reading section populated with curated links
 
 ---
 
@@ -153,15 +180,17 @@ This runs parallel to development.
 
 | Date | Milestone |
 |------|-----------|
-| Mar 15 | Design brief delivered, wireframes started |
-| Mar 31 | Figma mockups approved |
-| Apr 30 | Core site built and functional |
-| May 31 | All features implemented |
-| Jun 30 | Site polished, tested, staging live |
+| **Feb 28** | **Domain registered, landing page live, handouts for Moab** |
+| Early Mar | Moab event — first in-person outreach |
+| Mar 15 | Design samples presented to S.E., wireframes started |
+| Mar 31 | Figma mockups approved, dev environment ready |
+| Apr 30 | Site functionally complete |
+| **May 1** | **Site ready for private preview** |
+| May 22 | Santa Fe Lit Festival — show site to publishers/authors/bookstores |
 | Jul 15 | Launch essays received from contributors |
 | Aug 15 | All content loaded, soft launch to contributors |
 | Aug 31 | Final QA, everything ready |
-| **Sep 1** | **LAUNCH** |
+| **Sep 1** | **PUBLIC LAUNCH** |
 | Oct — Dec | East Coast bookstore tour |
 
 ---
@@ -170,8 +199,9 @@ This runs parallel to development.
 
 | Risk | Mitigation |
 |------|-----------|
+| May 1 site deadline is tight | Compress design phase, start dev in parallel with design approval, keep scope to P0 only |
 | Essays arrive late from contributors | Set early deadlines (July 15), have backup essays ready, launch with fewer if needed |
 | Design takes longer than expected | Start with a minimal, typography-focused design — the content IS the product |
 | Tech decisions delay development | Lean toward simple (static site + markdown) over complex (custom CMS) |
-| Low initial traffic | Bookstore partnerships and contributor networks are the primary distribution channel — activate them |
-| Mailing list growth slow pre-launch | Consider a "coming soon" landing page with email signup as early as April |
+| Low initial traffic | Bookstore partnerships and contributor networks are the primary distribution channel — activate them. Landing page collects emails starting now. |
+| Singular vs. plural name not decided | Decide this week — it affects domain, branding, handouts for Moab |
