@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Save the Novels</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,500&family=Nunito+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: #F0E6D3;
+      color: #3D2B1F;
+      font-family: 'Nunito Sans', sans-serif;
+      font-weight: 400;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      line-height: 1.7;
+    }
+
+    .plate {
+      max-width: 520px;
+      width: 100%;
+      text-align: center;
+      border: 2px solid #3D2B1F;
+      padding: 3rem 2.5rem;
+      position: relative;
+    }
+
+    .plate::before {
+      content: '';
+      position: absolute;
+      inset: 6px;
+      border: 1px solid #3D2B1F;
+      pointer-events: none;
+    }
+
+    .plate::after {
+      content: '';
+      position: absolute;
+      inset: 10px;
+      border: 1px solid rgba(61, 43, 31, 0.25);
+      pointer-events: none;
+    }
+
+    .ex-libris {
+      font-family: 'Nunito Sans', sans-serif;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.3em;
+      color: #8B7355;
+      margin-bottom: 1.2rem;
+    }
+
+    .ornament {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.6rem;
+      color: #8B7355;
+      margin-bottom: 1rem;
+      letter-spacing: 0.3em;
+    }
+
+    .logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.8rem;
+      font-weight: 700;
+      color: #3D2B1F;
+      margin-bottom: 0.2rem;
+      letter-spacing: 0.01em;
+    }
+
+    .tagline {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.3rem;
+      font-style: italic;
+      color: #6B5344;
+      margin-bottom: 1.5rem;
+    }
+
+    .description {
+      font-size: 0.95rem;
+      color: #6B5344;
+      margin-bottom: 2rem;
+      max-width: 380px;
+      margin-left: auto;
+      margin-right: auto;
+      font-weight: 300;
+    }
+
+    .signup-form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 2rem;
+    }
+
+    .signup-form input[type="email"] {
+      width: 100%;
+      max-width: 300px;
+      padding: 0.7rem 1rem;
+      border: 1px solid #C4AD90;
+      background: rgba(255, 255, 255, 0.4);
+      font-family: 'Nunito Sans', sans-serif;
+      font-size: 0.9rem;
+      color: #3D2B1F;
+      text-align: center;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    .signup-form input[type="email"]::placeholder { color: #A08B70; }
+    .signup-form input[type="email"]:focus { border-color: #3D2B1F; }
+
+    .signup-form button {
+      padding: 0.6rem 2rem;
+      background: #3D2B1F;
+      color: #F0E6D3;
+      border: none;
+      font-family: 'Nunito Sans', sans-serif;
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .signup-form button:hover { background: #5A4232; }
+
+    .manifesto {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: 1.05rem;
+      color: #8B7355;
+      margin-bottom: 1.5rem;
+    }
+
+    .coming-soon {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: #A08B70;
+      font-weight: 600;
+    }
+
+    .bottom-ornament {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.2rem;
+      color: #8B7355;
+      margin-top: 1rem;
+      letter-spacing: 0.3em;
+    }
+
+    @media (max-width: 480px) {
+      .plate { padding: 2rem 1.5rem; }
+      .logo { font-size: 2.2rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="plate">
+    <p class="ex-libris">Ex Libris</p>
+    <div class="ornament">&loz; &loz; &loz;</div>
+    <h1 class="logo">Save the Novels</h1>
+    <p class="tagline">The Reader Speaks.</p>
+    <p class="description">
+      A gathering place for personal stories about the novels that changed our lives.
+      Every reader has a book that broke them open.
+    </p>
+    <form class="signup-form" action="#">
+      <input type="email" placeholder="your email address" required>
+      <button type="submit">Be Notified</button>
+    </form>
+    <p class="manifesto">&ldquo;If I&rsquo;m going to fail, let me be on the side of literature.&rdquo;</p>
+    <p class="coming-soon">Coming September 2026</p>
+    <div class="bottom-ornament">&mdash;</div>
+  </div>
+</body>
+</html>

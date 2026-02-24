@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Save the Novels</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background-color: #F5E6D0;
+      color: #3B2F24;
+      font-family: 'Source Sans 3', sans-serif;
+      font-weight: 400;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      line-height: 1.7;
+    }
+
+    .container {
+      max-width: 580px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .accent-bar {
+      width: 48px;
+      height: 4px;
+      background: #C2410C;
+      margin: 0 auto 2rem;
+      border-radius: 2px;
+    }
+
+    .logo {
+      font-family: 'Lora', serif;
+      font-size: 3rem;
+      font-weight: 700;
+      color: #3B2F24;
+      margin-bottom: 0.3rem;
+    }
+
+    .tagline {
+      font-family: 'Lora', serif;
+      font-size: 1.25rem;
+      font-style: italic;
+      color: #588157;
+      margin-bottom: 2rem;
+    }
+
+    .description {
+      font-size: 1.05rem;
+      color: #6B5B4B;
+      margin-bottom: 2.5rem;
+      max-width: 460px;
+      margin-left: auto;
+      margin-right: auto;
+      font-weight: 300;
+    }
+
+    .signup-form {
+      display: flex;
+      gap: 0.5rem;
+      max-width: 430px;
+      margin: 0 auto 2.8rem;
+    }
+
+    .signup-form input[type="email"] {
+      flex: 1;
+      padding: 0.8rem 1rem;
+      border: 2px solid #D9C5A8;
+      border-radius: 8px;
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 0.95rem;
+      background: #FDF8F0;
+      color: #3B2F24;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    .signup-form input[type="email"]::placeholder { color: #A89880; }
+    .signup-form input[type="email"]:focus { border-color: #C2410C; }
+
+    .signup-form button {
+      padding: 0.8rem 1.5rem;
+      background: #C2410C;
+      color: #FDF8F0;
+      border: none;
+      border-radius: 8px;
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s;
+      white-space: nowrap;
+    }
+
+    .signup-form button:hover { background: #A93A0B; }
+
+    .manifesto {
+      font-family: 'Lora', serif;
+      font-style: italic;
+      font-size: 1.05rem;
+      color: #7A6B5A;
+      padding: 1.5rem 2rem;
+      background: rgba(88, 129, 87, 0.08);
+      border-left: 3px solid #588157;
+      border-radius: 0 8px 8px 0;
+      margin-bottom: 2rem;
+      text-align: left;
+      max-width: 440px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .coming-soon {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: #A89880;
+      font-weight: 600;
+    }
+
+    @media (max-width: 480px) {
+      .logo { font-size: 2.2rem; }
+      .signup-form { flex-direction: column; }
+      .signup-form button { width: 100%; }
+      .manifesto { padding: 1.2rem 1.4rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="accent-bar"></div>
+    <h1 class="logo">Save the Novels</h1>
+    <p class="tagline">The Reader Speaks.</p>
+    <p class="description">
+      A place for the personal stories behind the novels that shaped us.
+      We are building an archive of what reading really means.
+    </p>
+    <form class="signup-form" action="#">
+      <input type="email" placeholder="you@example.com" required>
+      <button type="submit">Stay Posted</button>
+    </form>
+    <blockquote class="manifesto">
+      &ldquo;If I&rsquo;m going to fail, let me be on the side of literature.&rdquo;
+    </blockquote>
+    <p class="coming-soon">Coming September 2026</p>
+  </div>
+</body>
+</html>

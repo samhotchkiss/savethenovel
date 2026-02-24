@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Save the Novels</title>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,700;1,400&family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #F0E8DA;
+    color: #1E3A5F;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 1.7;
+    min-height: 100vh;
+  }
+  .horizon {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 35vh;
+    background: linear-gradient(to top, rgba(90, 127, 160, 0.08) 0%, transparent 100%);
+    pointer-events: none;
+  }
+  .container {
+    position: relative;
+    z-index: 1;
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 100px 40px 80px;
+  }
+  .wave {
+    color: #5A7FA0;
+    font-size: 0.85rem;
+    letter-spacing: 0.6em;
+    text-transform: uppercase;
+    margin-bottom: 28px;
+    font-weight: 400;
+  }
+  h1 {
+    font-family: 'Newsreader', serif;
+    font-weight: 700;
+    font-size: clamp(2.6rem, 6vw, 4rem);
+    line-height: 1.15;
+    color: #1E3A5F;
+    margin-bottom: 10px;
+  }
+  .tagline {
+    font-family: 'Newsreader', serif;
+    font-style: italic;
+    font-size: 1.25rem;
+    color: #5A7FA0;
+    margin-bottom: 44px;
+  }
+  .description {
+    max-width: 480px;
+    color: #3D5A7A;
+    font-size: 1.05rem;
+    margin-bottom: 40px;
+  }
+  .manifesto {
+    font-family: 'Newsreader', serif;
+    font-style: italic;
+    font-size: 1.1rem;
+    color: #5A7FA0;
+    border-left: 3px solid #5A7FA0;
+    padding-left: 20px;
+    margin-bottom: 56px;
+    max-width: 420px;
+  }
+  form {
+    display: flex;
+    gap: 0;
+    max-width: 440px;
+    margin-bottom: 24px;
+    border-radius: 4px;
+    overflow: hidden;
+    border: 1.5px solid #1E3A5F;
+  }
+  input[type="email"] {
+    flex: 1;
+    padding: 14px 18px;
+    border: none;
+    background: rgba(255, 255, 255, 0.4);
+    color: #1E3A5F;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 0.95rem;
+  }
+  input[type="email"]::placeholder { color: #8DA4B8; }
+  input[type="email"]:focus { outline: none; background: rgba(255, 255, 255, 0.7); }
+  button {
+    padding: 14px 28px;
+    background: #1E3A5F;
+    color: #F0E8DA;
+    border: none;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+    font-size: 0.9rem;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    transition: background 0.2s;
+    white-space: nowrap;
+  }
+  button:hover { background: #2A4F7A; }
+  .date {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #8DA4B8;
+    font-weight: 400;
+  }
+  .footer-rule {
+    width: 100%;
+    max-width: 440px;
+    height: 1px;
+    background: linear-gradient(to right, #5A7FA0, transparent);
+    margin-top: 60px;
+    opacity: 0.3;
+  }
+  @media (max-width: 540px) {
+    .container { padding: 60px 24px; }
+    form { flex-direction: column; border: none; border-radius: 0; }
+    input[type="email"] { border: 1.5px solid #1E3A5F; border-radius: 4px; margin-bottom: 10px; }
+    button { border-radius: 4px; padding: 14px; }
+  }
+</style>
+</head>
+<body>
+<div class="horizon"></div>
+<main class="container">
+  <p class="wave">&mdash; Est. 2026 &mdash;</p>
+  <h1>Save the Novels</h1>
+  <p class="tagline">The Reader Speaks.</p>
+  <p class="description">
+    A site gathering personal stories about the novels that changed our lives.
+    The tide of a great book never fully recedes.
+  </p>
+  <blockquote class="manifesto">
+    "If I'm going to fail, let me be on the side of literature."
+  </blockquote>
+  <form action="#">
+    <input type="email" placeholder="Your email address" required>
+    <button type="submit">Stay in Touch</button>
+  </form>
+  <p class="date">Coming September 2026</p>
+  <div class="footer-rule"></div>
+</main>
+</body>
+</html>

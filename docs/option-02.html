@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Save the Novels</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,800;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background-color: #1A1714;
+      color: #E8D5B5;
+      font-family: 'Inter', sans-serif;
+      font-weight: 300;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      line-height: 1.7;
+    }
+
+    .container {
+      max-width: 600px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .ornament {
+      color: #D4A853;
+      font-size: 1.8rem;
+      letter-spacing: 0.6em;
+      margin-bottom: 2rem;
+    }
+
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.5rem;
+      font-weight: 800;
+      color: #E8D5B5;
+      margin-bottom: 0.3rem;
+      letter-spacing: -0.01em;
+    }
+
+    .tagline {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.3rem;
+      font-style: italic;
+      color: #D4A853;
+      margin-bottom: 2.2rem;
+    }
+
+    .description {
+      font-size: 1rem;
+      color: #B8A68E;
+      margin-bottom: 2.8rem;
+      max-width: 440px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .signup-form {
+      display: flex;
+      gap: 0.5rem;
+      max-width: 440px;
+      margin: 0 auto 3rem;
+    }
+
+    .signup-form input[type="email"] {
+      flex: 1;
+      padding: 0.85rem 1.1rem;
+      border: 1px solid #3D352A;
+      border-radius: 4px;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 300;
+      background: #252019;
+      color: #E8D5B5;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    .signup-form input[type="email"]::placeholder { color: #6B5F50; }
+    .signup-form input[type="email"]:focus { border-color: #D4A853; }
+
+    .signup-form button {
+      padding: 0.85rem 1.6rem;
+      background: #D4A853;
+      color: #1A1714;
+      border: none;
+      border-radius: 4px;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background 0.2s;
+      white-space: nowrap;
+    }
+
+    .signup-form button:hover { background: #C49A48; }
+
+    .divider {
+      width: 60px;
+      height: 1px;
+      background: #3D352A;
+      margin: 0 auto 2rem;
+    }
+
+    .manifesto {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: 1.1rem;
+      color: #8C7D6A;
+      margin-bottom: 2rem;
+      max-width: 420px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .coming-soon {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: #5A4F42;
+      font-weight: 400;
+    }
+
+    @media (max-width: 480px) {
+      .logo { font-size: 2.5rem; }
+      .signup-form { flex-direction: column; }
+      .signup-form button { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="ornament">&middot; &middot; &middot;</div>
+    <h1 class="logo">Save the Novels</h1>
+    <p class="tagline">The Reader Speaks.</p>
+    <p class="description">
+      We are gathering personal essays about the novels that changed our lives &mdash;
+      a living archive of what literature does to the people who love it.
+    </p>
+    <form class="signup-form" action="#">
+      <input type="email" placeholder="Enter your email" required>
+      <button type="submit">Join the List</button>
+    </form>
+    <div class="divider"></div>
+    <p class="manifesto">&ldquo;If I&rsquo;m going to fail, let me be on the side of literature.&rdquo;</p>
+    <p class="coming-soon">Coming September 2026</p>
+  </div>
+</body>
+</html>

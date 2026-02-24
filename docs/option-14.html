@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Save the Novels</title>
+  <link href="https://fonts.googleapis.com/css2?family=Literata:ital,wght@0,400;0,700;0,800;1,400&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #1C2333;
+      color: #E8E4DF;
+      font-family: 'Outfit', sans-serif;
+      font-weight: 300;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      line-height: 1.7;
+    }
+    .container {
+      max-width: 600px;
+      width: 100%;
+      text-align: center;
+    }
+    .star {
+      font-size: 0.6rem;
+      color: #6B8CAE;
+      letter-spacing: 0.6em;
+      margin-bottom: 2.5rem;
+    }
+    h1 {
+      font-family: 'Literata', serif;
+      font-weight: 800;
+      font-size: clamp(2.6rem, 7vw, 3.8rem);
+      line-height: 1.1;
+      letter-spacing: -0.01em;
+      margin-bottom: 0.4rem;
+    }
+    .tagline {
+      font-family: 'Literata', serif;
+      font-style: italic;
+      font-weight: 400;
+      font-size: 1.2rem;
+      color: #6B8CAE;
+      margin-bottom: 2rem;
+    }
+    .description {
+      font-size: 1.05rem;
+      color: #A8A4A0;
+      max-width: 440px;
+      margin: 0 auto 2.5rem;
+    }
+    form {
+      max-width: 400px;
+      margin: 0 auto 3rem;
+    }
+    form input[type="email"] {
+      width: 100%;
+      padding: 0.9rem 1rem;
+      border: 1px solid rgba(107, 140, 174, 0.3);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.05);
+      font-family: 'Outfit', sans-serif;
+      font-size: 0.95rem;
+      color: #E8E4DF;
+      outline: none;
+      margin-bottom: 0.75rem;
+      transition: border-color 0.2s;
+    }
+    form input[type="email"]::placeholder { color: #6B7280; }
+    form input[type="email"]:focus { border-color: #6B8CAE; }
+    form button {
+      width: 100%;
+      padding: 0.9rem;
+      background: #6B8CAE;
+      color: #1C2333;
+      border: none;
+      border-radius: 8px;
+      font-family: 'Outfit', sans-serif;
+      font-weight: 500;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    form button:hover { background: #7FA0C0; }
+    .manifesto {
+      font-family: 'Literata', serif;
+      font-style: italic;
+      font-size: 1rem;
+      color: #6B8CAE;
+      opacity: 0.7;
+      margin-bottom: 3rem;
+      max-width: 380px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .rule {
+      width: 40px;
+      height: 1px;
+      background: rgba(107, 140, 174, 0.4);
+      margin: 0 auto 1.5rem;
+    }
+    .date {
+      font-size: 0.8rem;
+      font-weight: 400;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #5A5650;
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <p class="star">&bull; &bull; &bull;</p>
+    <h1>Save the Novels</h1>
+    <p class="tagline">The Reader Speaks.</p>
+    <p class="description">A site gathering personal stories about the novels that changed our lives. Some books leave fingerprints on everything that follows.</p>
+    <form action="#">
+      <input type="email" placeholder="Your email address" required>
+      <button type="submit">Get Notified</button>
+    </form>
+    <blockquote class="manifesto">&ldquo;If I&rsquo;m going to fail, let me be on the side of literature.&rdquo;</blockquote>
+    <div class="rule"></div>
+    <p class="date">Coming September 2026</p>
+  </main>
+</body>
+</html>

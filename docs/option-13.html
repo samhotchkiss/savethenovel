@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Save the Novels</title>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500&family=IBM+Plex+Serif:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #F5E1C0;
+      color: #2C1810;
+      font-family: 'IBM Plex Sans', sans-serif;
+      font-weight: 300;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      line-height: 1.7;
+    }
+    .container {
+      max-width: 580px;
+      width: 100%;
+    }
+    .accent-dot {
+      width: 10px;
+      height: 10px;
+      background: #7F1D1D;
+      border-radius: 50%;
+      margin-bottom: 2rem;
+    }
+    h1 {
+      font-family: 'IBM Plex Serif', serif;
+      font-weight: 700;
+      font-size: clamp(2.6rem, 7vw, 3.6rem);
+      line-height: 1.1;
+      margin-bottom: 0.3rem;
+    }
+    .tagline {
+      font-family: 'IBM Plex Serif', serif;
+      font-style: italic;
+      font-weight: 400;
+      font-size: 1.2rem;
+      color: #7F1D1D;
+      margin-bottom: 2rem;
+    }
+    .description {
+      font-size: 1.05rem;
+      color: #5A3A2A;
+      max-width: 460px;
+      margin-bottom: 2.5rem;
+    }
+    form {
+      margin-bottom: 2.5rem;
+      max-width: 420px;
+    }
+    .input-wrap {
+      display: flex;
+      gap: 0;
+      border-radius: 6px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(44, 24, 16, 0.08);
+    }
+    .input-wrap input[type="email"] {
+      flex: 1;
+      padding: 0.85rem 1rem;
+      border: 2px solid #D9C4A0;
+      border-right: none;
+      border-radius: 6px 0 0 6px;
+      background: rgba(255, 255, 255, 0.6);
+      font-family: 'IBM Plex Sans', sans-serif;
+      font-size: 0.95rem;
+      color: #2C1810;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+    .input-wrap input[type="email"]:focus { border-color: #7F1D1D; }
+    .input-wrap button {
+      padding: 0.85rem 1.5rem;
+      background: #7F1D1D;
+      color: #F5E1C0;
+      border: none;
+      border-radius: 0 6px 6px 0;
+      font-family: 'IBM Plex Sans', sans-serif;
+      font-weight: 500;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .input-wrap button:hover { background: #5F1515; }
+    .manifesto {
+      font-family: 'IBM Plex Serif', serif;
+      font-style: italic;
+      font-size: 1rem;
+      color: #7A5A48;
+      padding: 1.2rem 1.5rem;
+      background: rgba(127, 29, 29, 0.06);
+      border-radius: 4px;
+      margin-bottom: 2.5rem;
+      max-width: 460px;
+    }
+    .manifesto::before { content: "\201C"; }
+    .manifesto::after { content: "\201D"; }
+    .date {
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #9A7A60;
+    }
+    @media (max-width: 500px) {
+      .input-wrap { flex-direction: column; border-radius: 6px; }
+      .input-wrap input[type="email"] { border-right: 2px solid #D9C4A0; border-radius: 6px 6px 0 0; border-bottom: none; }
+      .input-wrap input[type="email"]:focus { border-color: #7F1D1D; }
+      .input-wrap button { border-radius: 0 0 6px 6px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <div class="accent-dot"></div>
+    <h1>Save the Novels</h1>
+    <p class="tagline">The Reader Speaks.</p>
+    <p class="description">We are building a home for the personal stories behind the novels that changed our lives. A place where reading becomes testimony.</p>
+    <form action="#">
+      <div class="input-wrap">
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit">Join Us</button>
+      </div>
+    </form>
+    <p class="manifesto">If I'm going to fail, let me be on the side of literature.</p>
+    <p class="date">Coming September 2026</p>
+  </main>
+</body>
+</html>

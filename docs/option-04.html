@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Save the Novels</title>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: #FFFFFF;
+      color: #111111;
+      font-family: 'EB Garamond', serif;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 3rem 2rem;
+      line-height: 1.8;
+    }
+
+    .container {
+      max-width: 480px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .logo {
+      font-size: 3.4rem;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.5rem;
+    }
+
+    .rule {
+      width: 40px;
+      height: 1px;
+      background: #111111;
+      margin: 0 auto 1.5rem;
+    }
+
+    .tagline {
+      font-size: 1.4rem;
+      font-style: italic;
+      color: #2D6A4F;
+      margin-bottom: 3rem;
+      font-weight: 400;
+    }
+
+    .description {
+      font-size: 1.15rem;
+      color: #444444;
+      margin-bottom: 3.5rem;
+      font-weight: 400;
+    }
+
+    .signup-form {
+      max-width: 360px;
+      margin: 0 auto 4rem;
+    }
+
+    .signup-form input[type="email"] {
+      width: 100%;
+      padding: 0.7rem 0;
+      border: none;
+      border-bottom: 1px solid #CCCCCC;
+      font-family: 'EB Garamond', serif;
+      font-size: 1.05rem;
+      background: transparent;
+      color: #111111;
+      text-align: center;
+      outline: none;
+      transition: border-color 0.2s;
+      margin-bottom: 1.5rem;
+    }
+
+    .signup-form input[type="email"]::placeholder { color: #AAAAAA; }
+    .signup-form input[type="email"]:focus { border-bottom-color: #2D6A4F; }
+
+    .signup-form button {
+      padding: 0.65rem 2.2rem;
+      background: transparent;
+      color: #111111;
+      border: 1px solid #111111;
+      font-family: 'EB Garamond', serif;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all 0.2s;
+      letter-spacing: 0.05em;
+    }
+
+    .signup-form button:hover {
+      background: #2D6A4F;
+      border-color: #2D6A4F;
+      color: #FFFFFF;
+    }
+
+    .manifesto {
+      font-size: 1.1rem;
+      font-style: italic;
+      color: #777777;
+      margin-bottom: 3rem;
+    }
+
+    .coming-soon {
+      font-size: 0.9rem;
+      letter-spacing: 0.12em;
+      color: #AAAAAA;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+
+    @media (max-width: 480px) {
+      .logo { font-size: 2.6rem; }
+      .description { font-size: 1.05rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="logo">Save the Novels</h1>
+    <div class="rule"></div>
+    <p class="tagline">The Reader Speaks.</p>
+    <p class="description">
+      A site gathering personal stories about the novels that changed our lives.
+    </p>
+    <form class="signup-form" action="#">
+      <input type="email" placeholder="your email" required>
+      <button type="submit">Subscribe</button>
+    </form>
+    <p class="manifesto">&ldquo;If I&rsquo;m going to fail, let me be on the side of literature.&rdquo;</p>
+    <p class="coming-soon">Coming September 2026</p>
+  </div>
+</body>
+</html>

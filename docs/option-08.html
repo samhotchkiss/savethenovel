@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Save the Novels</title>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Karla:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #1E1E1E;
+    color: #F5F0E6;
+    font-family: 'Karla', sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 1.7;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container {
+    width: 100%;
+    max-width: 720px;
+    padding: 80px 40px;
+    text-align: center;
+  }
+  .amber-bar {
+    width: 80px;
+    height: 4px;
+    background: #E8C87A;
+    margin: 0 auto 48px;
+  }
+  h1 {
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 700;
+    font-size: clamp(2.8rem, 7vw, 4.5rem);
+    color: #E8C87A;
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+    margin-bottom: 10px;
+  }
+  .tagline {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.3rem;
+    color: #E8C87A;
+    opacity: 0.7;
+    font-style: italic;
+    margin-bottom: 48px;
+  }
+  .description {
+    max-width: 500px;
+    margin: 0 auto 40px;
+    font-size: 1.05rem;
+    color: rgba(245, 240, 230, 0.75);
+  }
+  .manifesto {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.15rem;
+    color: #E8C87A;
+    font-style: italic;
+    margin-bottom: 56px;
+    padding: 28px 32px;
+    border-top: 1px solid rgba(232, 200, 122, 0.2);
+    border-bottom: 1px solid rgba(232, 200, 122, 0.2);
+  }
+  form {
+    display: flex;
+    max-width: 440px;
+    margin: 0 auto 24px;
+    border: 1px solid rgba(232, 200, 122, 0.35);
+    overflow: hidden;
+  }
+  input[type="email"] {
+    flex: 1;
+    padding: 15px 20px;
+    border: none;
+    background: transparent;
+    color: #F5F0E6;
+    font-family: 'Karla', sans-serif;
+    font-size: 0.95rem;
+  }
+  input[type="email"]::placeholder { color: rgba(245, 240, 230, 0.3); }
+  input[type="email"]:focus { outline: none; }
+  button {
+    padding: 15px 28px;
+    background: #E8C87A;
+    color: #1E1E1E;
+    border: none;
+    font-family: 'Karla', sans-serif;
+    font-weight: 500;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  button:hover { background: #F0D99A; }
+  .date {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: rgba(232, 200, 122, 0.4);
+  }
+  .corner { position: fixed; color: rgba(232, 200, 122, 0.08); font-family: 'Libre Baskerville', serif; font-size: 15rem; line-height: 1; pointer-events: none; }
+  .corner-tl { top: -30px; left: -10px; }
+  .corner-br { bottom: -40px; right: -10px; }
+  @media (max-width: 540px) {
+    .container { padding: 60px 24px; }
+    form { flex-direction: column; border: none; }
+    input[type="email"] { border: 1px solid rgba(232, 200, 122, 0.35); margin-bottom: 12px; }
+    button { padding: 15px; }
+  }
+</style>
+</head>
+<body>
+<div class="corner corner-tl">&ldquo;</div>
+<div class="corner corner-br">&rdquo;</div>
+<main class="container">
+  <div class="amber-bar"></div>
+  <h1>Save the Novels</h1>
+  <p class="tagline">The Reader Speaks.</p>
+  <p class="description">
+    A site gathering personal stories about the novels that changed our lives.
+    The books that haunted you deserve to be spoken for.
+  </p>
+  <blockquote class="manifesto">
+    "If I'm going to fail, let me be on the side of literature."
+  </blockquote>
+  <form action="#">
+    <input type="email" placeholder="Your email" required>
+    <button type="submit">Enter</button>
+  </form>
+  <p class="date">Coming September 2026</p>
+</main>
+</body>
+</html>

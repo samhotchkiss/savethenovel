@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Save the Novels</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,700;0,800;1,400&family=Noto+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #FFFDF8;
+      color: #333;
+      font-family: 'Noto Sans', sans-serif;
+      font-weight: 300;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      line-height: 1.7;
+    }
+    .container {
+      max-width: 600px;
+      width: 100%;
+    }
+    .leaf {
+      display: inline-block;
+      width: 18px;
+      height: 18px;
+      border: 2px solid #4A7C59;
+      border-radius: 0 50% 0 50%;
+      margin-bottom: 1.8rem;
+    }
+    h1 {
+      font-family: 'Bitter', serif;
+      font-weight: 800;
+      font-size: clamp(2.6rem, 7vw, 3.8rem);
+      line-height: 1.1;
+      letter-spacing: -0.01em;
+      color: #222;
+      margin-bottom: 0.3rem;
+    }
+    .tagline {
+      font-family: 'Bitter', serif;
+      font-style: italic;
+      font-weight: 400;
+      font-size: 1.2rem;
+      color: #4A7C59;
+      margin-bottom: 2rem;
+    }
+    .description {
+      font-size: 1.05rem;
+      color: #555;
+      max-width: 470px;
+      margin-bottom: 2.5rem;
+    }
+    form {
+      max-width: 440px;
+      margin-bottom: 2.5rem;
+    }
+    .form-row {
+      display: flex;
+      gap: 0;
+      border-radius: 8px;
+      overflow: hidden;
+      border: 2px solid #D6D2C8;
+      transition: border-color 0.2s;
+    }
+    .form-row:focus-within { border-color: #4A7C59; }
+    .form-row input[type="email"] {
+      flex: 1;
+      padding: 0.85rem 1rem;
+      border: none;
+      background: transparent;
+      font-family: 'Noto Sans', sans-serif;
+      font-size: 0.95rem;
+      color: #333;
+      outline: none;
+    }
+    .form-row input[type="email"]::placeholder { color: #AAA; }
+    .form-row button {
+      padding: 0.85rem 1.5rem;
+      background: #4A7C59;
+      color: #FFFDF8;
+      border: none;
+      font-family: 'Noto Sans', sans-serif;
+      font-weight: 500;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .form-row button:hover { background: #3A6347; }
+    .manifesto {
+      font-family: 'Bitter', serif;
+      font-style: italic;
+      font-size: 1rem;
+      color: #4A7C59;
+      position: relative;
+      padding-left: 1.4rem;
+      margin-bottom: 2.5rem;
+      max-width: 420px;
+    }
+    .manifesto::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.15em;
+      width: 4px;
+      height: 100%;
+      background: #4A7C59;
+      border-radius: 2px;
+      opacity: 0.35;
+    }
+    .bottom-line {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    .bottom-line .line {
+      flex: 1;
+      height: 1px;
+      background: #E4E0D8;
+    }
+    .date {
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #AAA;
+      white-space: nowrap;
+    }
+    @media (max-width: 500px) {
+      .form-row { flex-direction: column; }
+      .form-row button { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <div class="leaf"></div>
+    <h1>Save the Novels</h1>
+    <p class="tagline">The Reader Speaks.</p>
+    <p class="description">A site gathering personal stories about the novels that changed our lives. Because every book that mattered deserves a witness.</p>
+    <form action="#">
+      <div class="form-row">
+        <input type="email" placeholder="Your email address" required>
+        <button type="submit">Sign Up</button>
+      </div>
+    </form>
+    <blockquote class="manifesto">&ldquo;If I&rsquo;m going to fail, let me be on the side of literature.&rdquo;</blockquote>
+    <div class="bottom-line">
+      <span class="line"></span>
+      <p class="date">Coming September 2026</p>
+      <span class="line"></span>
+    </div>
+  </main>
+</body>
+</html>

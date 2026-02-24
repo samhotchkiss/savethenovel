@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Save the Novels</title>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,700;1,400&family=Nunito:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #F5EBE6;
+    color: #3E2723;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 1.7;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container {
+    width: 100%;
+    max-width: 600px;
+    padding: 80px 36px;
+    text-align: center;
+  }
+  .petal {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 36px;
+  }
+  .petal span {
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #C48B82;
+    opacity: 0.5;
+  }
+  .petal span:nth-child(2) { opacity: 0.8; }
+  .petal span:nth-child(3) { opacity: 0.35; }
+  h1 {
+    font-family: 'Spectral', serif;
+    font-weight: 700;
+    font-size: clamp(2.4rem, 6vw, 3.4rem);
+    line-height: 1.15;
+    color: #3E2723;
+    margin-bottom: 8px;
+  }
+  .tagline {
+    font-family: 'Spectral', serif;
+    font-style: italic;
+    font-size: 1.2rem;
+    color: #C48B82;
+    margin-bottom: 40px;
+  }
+  .description {
+    max-width: 440px;
+    margin: 0 auto 36px;
+    color: #5D4037;
+    font-size: 1.05rem;
+  }
+  .manifesto {
+    font-family: 'Spectral', serif;
+    font-style: italic;
+    font-size: 1.1rem;
+    color: #7B5B52;
+    max-width: 400px;
+    margin: 0 auto 52px;
+    position: relative;
+    padding: 20px 0;
+  }
+  .manifesto::before {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 2px;
+    background: #C48B82;
+    margin: 0 auto 20px;
+    border-radius: 1px;
+  }
+  .manifesto::after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 2px;
+    background: #C48B82;
+    margin: 20px auto 0;
+    border-radius: 1px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 28px;
+  }
+  input[type="email"] {
+    width: 100%;
+    max-width: 340px;
+    padding: 14px 20px;
+    border: 1.5px solid #D4ADA4;
+    border-radius: 32px;
+    background: rgba(255, 255, 255, 0.5);
+    color: #3E2723;
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.95rem;
+    text-align: center;
+  }
+  input[type="email"]::placeholder { color: #B0908A; }
+  input[type="email"]:focus { outline: none; border-color: #C48B82; background: rgba(255, 255, 255, 0.8); }
+  button {
+    padding: 13px 40px;
+    background: #C48B82;
+    color: #fff;
+    border: none;
+    border-radius: 32px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  button:hover { background: #B37A72; }
+  .date {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: #B0908A;
+    font-weight: 400;
+  }
+  @media (max-width: 480px) {
+    .container { padding: 60px 24px; }
+  }
+</style>
+</head>
+<body>
+<main class="container">
+  <div class="petal"><span></span><span></span><span></span></div>
+  <h1>Save the Novels</h1>
+  <p class="tagline">The Reader Speaks.</p>
+  <p class="description">
+    A site gathering personal stories about the novels that changed our lives.
+    Because the books we carry with us deserve to be shared.
+  </p>
+  <blockquote class="manifesto">
+    "If I'm going to fail, let me be on the side of literature."
+  </blockquote>
+  <form action="#">
+    <input type="email" placeholder="Your email address" required>
+    <button type="submit">Keep Me Posted</button>
+  </form>
+  <p class="date">Coming September 2026</p>
+</main>
+</body>
+</html>

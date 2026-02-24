@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Save the Novels</title>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background-color: #FAF7F2;
+      color: #2C2418;
+      font-family: 'DM Sans', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 560px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .logo {
+      font-family: 'Crimson Pro', serif;
+      font-size: 3.2rem;
+      font-weight: 700;
+      color: #2C2418;
+      margin-bottom: 0.25rem;
+      letter-spacing: -0.02em;
+    }
+
+    .tagline {
+      font-family: 'Crimson Pro', serif;
+      font-size: 1.35rem;
+      font-style: italic;
+      color: #2D6A4F;
+      margin-bottom: 2rem;
+    }
+
+    .description {
+      font-size: 1.05rem;
+      color: #5C4E3C;
+      margin-bottom: 2.5rem;
+      max-width: 440px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .signup-form {
+      display: flex;
+      gap: 0.5rem;
+      max-width: 420px;
+      margin: 0 auto 2.5rem;
+    }
+
+    .signup-form input[type="email"] {
+      flex: 1;
+      padding: 0.8rem 1rem;
+      border: 1.5px solid #D5CBBC;
+      border-radius: 6px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.95rem;
+      background: #FFFFFF;
+      color: #2C2418;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    .signup-form input[type="email"]:focus {
+      border-color: #2D6A4F;
+    }
+
+    .signup-form button {
+      padding: 0.8rem 1.5rem;
+      background: #2D6A4F;
+      color: #FAF7F2;
+      border: none;
+      border-radius: 6px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background 0.2s;
+      white-space: nowrap;
+    }
+
+    .signup-form button:hover { background: #245840; }
+
+    .manifesto {
+      font-family: 'Crimson Pro', serif;
+      font-style: italic;
+      font-size: 1.1rem;
+      color: #6B5D4D;
+      border-top: 1px solid #E0D6C8;
+      padding-top: 2rem;
+      margin-bottom: 1.5rem;
+      max-width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .coming-soon {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: #9B8E7E;
+    }
+
+    @media (max-width: 480px) {
+      .logo { font-size: 2.4rem; }
+      .signup-form { flex-direction: column; }
+      .signup-form button { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="logo">Save the Novels</h1>
+    <p class="tagline">The Reader Speaks.</p>
+    <p class="description">
+      A site gathering personal stories about the novels that changed our lives.
+      Your reading life matters &mdash; and we want to hear about it.
+    </p>
+    <form class="signup-form" action="#">
+      <input type="email" placeholder="Your email address" required>
+      <button type="submit">Notify Me</button>
+    </form>
+    <p class="manifesto">&ldquo;If I&rsquo;m going to fail, let me be on the side of literature.&rdquo;</p>
+    <p class="coming-soon">Coming September 2026</p>
+  </div>
+</body>
+</html>
