@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Save the Novels</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=IBM+Plex+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: #FAFAF8; color: #111;
+      font-family: Georgia, 'Times New Roman', serif;
+      min-height: 100vh; display: flex; align-items: center; justify-content: center;
+      padding: 2rem; line-height: 1.65;
+    }
+
+    .frame {
+      max-width: 600px; width: 100%;
+      border: 1px solid #111; padding: 3rem 2.5rem; text-align: center;
+    }
+
+    .latin {
+      font-family: 'IBM Plex Mono', monospace; font-size: 0.65rem;
+      letter-spacing: 0.25em; text-transform: uppercase;
+      color: #888; margin-bottom: 2.5rem;
+    }
+
+    h1 {
+      font-family: 'DM Serif Display', serif; font-weight: 400;
+      font-size: clamp(2.8rem, 8vw, 4.5rem);
+      line-height: 1.0; letter-spacing: -0.03em; margin-bottom: 0.5rem;
+    }
+
+    .tagline {
+      font-family: 'DM Serif Display', serif; font-style: italic;
+      font-size: 1.4rem; margin-bottom: 1.5rem;
+    }
+
+    .divider { width: 100%; height: 1px; background: #111; margin: 1.5rem auto; }
+    .divider.light { width: 100px; background: #CCC; }
+
+    .description {
+      font-size: 1.05rem; max-width: 420px; margin: 0 auto 2rem; color: #333;
+    }
+
+    .form-row {
+      display: flex; max-width: 400px; margin: 0 auto 2rem; border: 1px solid #111;
+    }
+
+    .form-row input[type="email"] {
+      flex: 1; padding: 0.8rem 1rem; border: none; background: transparent;
+      font-family: 'IBM Plex Mono', monospace; font-size: 0.82rem;
+      color: #111; outline: none;
+    }
+
+    .form-row input::placeholder { color: #999; }
+
+    .form-row button {
+      padding: 0.8rem 1.4rem; background: #111; color: #FAFAF8; border: none;
+      font-family: 'IBM Plex Mono', monospace; font-weight: 500;
+      font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase;
+      cursor: pointer; transition: background 0.2s;
+    }
+
+    .form-row button:hover { background: #333; }
+
+    .manifesto {
+      font-family: 'DM Serif Display', serif; font-style: italic;
+      font-size: 1.1rem; color: #555; margin-bottom: 2rem;
+    }
+
+    .date {
+      font-family: 'IBM Plex Mono', monospace; font-size: 0.68rem;
+      letter-spacing: 0.2em; text-transform: uppercase; color: #999;
+    }
+
+    @media (max-width: 500px) {
+      .frame { padding: 2rem 1.5rem; }
+      .form-row { flex-direction: column; border: none; }
+      .form-row input[type="email"] { border: 1px solid #111; margin-bottom: 0.5rem; }
+      .form-row button { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <div class="frame">
+    <p class="latin">Ex biblioth&#x113;c&#x101; oriundus sum</p>
+    <h1>Save the Novels</h1>
+    <p class="tagline">The Reader Speaks.</p>
+    <div class="divider"></div>
+    <p class="description">
+      A site gathering personal stories about the novels that changed our lives.
+      Every reading life holds a story worth telling.
+    </p>
+    <form action="#" class="form-row">
+      <input type="email" placeholder="you@email.com" required>
+      <button type="submit">Subscribe</button>
+    </form>
+    <div class="divider light"></div>
+    <p class="manifesto">&ldquo;If I&rsquo;m going to fail, let me be on the side of literature.&rdquo;</p>
+    <p class="date">Coming September 2026</p>
+  </div>
+</body>
+</html>

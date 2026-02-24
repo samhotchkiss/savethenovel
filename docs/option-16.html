@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Save the Novels</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #E8DCC8; color: #2A1F14; font-family: 'Nunito Sans', sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 24px; line-height: 1.6; }
+  .frame-outer { max-width: 620px; width: 100%; border: 4px solid #6B4C30; padding: 8px; }
+  .frame-mid { border: 1px solid #8B6B4A; padding: 6px; }
+  .frame-inner { border: 2px solid #6B4C30; padding: 48px 40px; text-align: center; }
+  .ex-libris { font-family: 'Cormorant Garamond', serif; font-size: 11px; letter-spacing: 3px; text-transform: uppercase; color: #6B4C30; margin-bottom: 28px; }
+  .ornament { color: #8B6B4A; font-size: 14px; letter-spacing: 6px; margin: 20px 0; }
+  h1 { font-family: 'Cormorant Garamond', serif; font-size: 2.8rem; font-weight: 700; line-height: 1.1; margin-bottom: 6px; }
+  .tagline { font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; font-style: italic; color: #5C4633; margin-bottom: 24px; }
+  .description { font-size: 0.92rem; max-width: 420px; margin: 0 auto 28px; color: #4A3828; }
+  .manifesto { font-family: 'Cormorant Garamond', serif; font-size: 1.05rem; font-style: italic; color: #5C4633; max-width: 400px; margin: 0 auto 28px; }
+  .form-row { display: flex; gap: 8px; max-width: 380px; margin: 0 auto 24px; }
+  .form-row input { flex: 1; padding: 10px 14px; border: 1px solid #8B6B4A; background: #F2EADB; font-family: 'Nunito Sans', sans-serif; font-size: 0.9rem; color: #2A1F14; outline: none; }
+  .form-row input::placeholder { color: #8B6B4A; }
+  .form-row button { padding: 10px 20px; background: #6B4C30; color: #E8DCC8; border: none; font-family: 'Cormorant Garamond', serif; font-size: 0.95rem; font-weight: 600; letter-spacing: 1px; cursor: pointer; transition: background 0.3s; }
+  .form-row button:hover { background: #4A3420; }
+  .date { font-size: 0.8rem; letter-spacing: 2px; text-transform: uppercase; color: #8B6B4A; margin-bottom: 4px; }
+  .motto { font-family: 'Cormorant Garamond', serif; font-size: 0.85rem; font-style: italic; color: #8B6B4A; margin-top: 20px; }
+  @media (max-width: 520px) {
+    .frame-inner { padding: 32px 20px; }
+    h1 { font-size: 2rem; }
+    .form-row { flex-direction: column; }
+    .form-row input, .form-row button { width: 100%; }
+  }
+</style>
+</head>
+<body>
+<div class="frame-outer"><div class="frame-mid"><div class="frame-inner">
+  <div class="ex-libris">Ex biblioth&#x113;c&#x101; oriundus sum</div>
+  <div class="ornament">&diams; &diams; &diams;</div>
+  <h1>Save the Novels</h1>
+  <p class="tagline">The Reader Speaks.</p>
+  <p class="description">We are gathering personal stories about the novels that shaped us &mdash; the books that broke us open, rebuilt us, and refused to let go. Your story deserves to be told.</p>
+  <div class="ornament">&bull; &loz; &bull;</div>
+  <blockquote class="manifesto">&ldquo;If I&rsquo;m going to fail, let me be on the side of literature.&rdquo;</blockquote>
+  <form action="#">
+    <div class="form-row">
+      <input type="email" placeholder="Your email address" required>
+      <button type="submit">Join</button>
+    </div>
+  </form>
+  <p class="date">Coming September 2026</p>
+  <div class="ornament">&diams;</div>
+  <p class="motto">Ex biblioth&#x113;c&#x101; oriundus sum</p>
+</div></div></div>
+</body>
+</html>

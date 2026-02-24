@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Save the Novels</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #111D2B;
+    color: #F0E8D8;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    line-height: 1.7;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2.5rem 1.5rem;
+    -webkit-font-smoothing: antialiased;
+  }
+  .plate {
+    max-width: 600px;
+    width: 100%;
+    border: 3px solid #C8A96E;
+    padding: 2.8rem 2.8rem 2.5rem;
+    text-align: center;
+    position: relative;
+  }
+  .plate::after {
+    content: '';
+    position: absolute;
+    inset: 6px;
+    border: 1px solid rgba(200, 169, 110, 0.4);
+    pointer-events: none;
+  }
+  .latin {
+    font-family: 'Playfair Display', serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: #C8A96E;
+    margin-bottom: 2.2rem;
+    font-variant: small-caps;
+  }
+  h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 1.1;
+    color: #C8A96E;
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.01em;
+  }
+  .tagline {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 1.2rem;
+    color: #F0E8D8;
+    margin-bottom: 0.8rem;
+    opacity: 0.85;
+  }
+  .rule {
+    width: 60px;
+    height: 1px;
+    background: #C8A96E;
+    margin: 0 auto 2rem;
+    opacity: 0.5;
+  }
+  .description {
+    font-size: 0.92rem;
+    color: rgba(240, 232, 216, 0.7);
+    max-width: 420px;
+    margin: 0 auto 2.2rem;
+    line-height: 1.85;
+  }
+  .form-group {
+    display: flex;
+    gap: 0.5rem;
+    max-width: 400px;
+    margin: 0 auto 2.2rem;
+  }
+  .form-group input {
+    flex: 1;
+    padding: 0.7rem 1rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 300;
+    background: transparent;
+    border: 1px solid #C8A96E;
+    color: #F0E8D8;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  .form-group input::placeholder { color: rgba(200, 169, 110, 0.4); }
+  .form-group input:focus { box-shadow: 0 0 0 1px rgba(200, 169, 110, 0.3); }
+  .form-group button {
+    padding: 0.7rem 1.5rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 0.78rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    background: #C8A96E;
+    color: #111D2B;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  .form-group button:hover { background: #D8B97E; }
+  .quote {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 1rem;
+    color: rgba(240, 232, 216, 0.5);
+    max-width: 380px;
+    margin: 0 auto 2rem;
+    line-height: 1.6;
+  }
+  .quote::before { content: "\201C"; }
+  .quote::after { content: "\201D"; }
+  .date {
+    font-size: 0.72rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgba(200, 169, 110, 0.45);
+  }
+  @media (max-width: 520px) {
+    .plate { padding: 2rem 1.5rem; }
+    h1 { font-size: 2.2rem; }
+    .form-group { flex-direction: column; }
+    .form-group button { padding: 0.75rem; }
+  }
+</style>
+</head>
+<body>
+  <div class="plate">
+    <p class="latin">Ex bibliothēcā oriundus sum</p>
+    <h1>Save the Novels</h1>
+    <p class="tagline">The Reader Speaks.</p>
+    <div class="rule"></div>
+    <p class="description">We are gathering the personal stories that live inside the books you love — the moments a novel changed your mind, broke your heart, or quietly saved your life.</p>
+    <form action="#" class="form-group">
+      <input type="email" placeholder="Your email address" required>
+      <button type="submit">Join</button>
+    </form>
+    <p class="quote">If I'm going to fail, let me be on the side of literature.</p>
+    <p class="date">Coming September 2026</p>
+  </div>
+</body>
+</html>

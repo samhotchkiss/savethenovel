@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Save the Novels</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #D6C9AE;
+    color: #1E150E;
+    font-family: 'Crimson Pro', serif;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2.5rem 1.5rem;
+    -webkit-font-smoothing: antialiased;
+  }
+  .plate {
+    background: #E2D5BD;
+    max-width: 600px;
+    width: 100%;
+    padding: 1rem;
+    border: 4px solid #1E150E;
+  }
+  .plate-inner {
+    border: 1px solid #1E150E;
+    padding: 2.8rem 2.5rem;
+    text-align: center;
+    position: relative;
+  }
+  .corner { position: absolute; font-size: 1.2rem; color: #1E150E; line-height: 1; }
+  .corner-tl { top: 6px; left: 10px; }
+  .corner-tr { top: 6px; right: 10px; }
+  .corner-bl { bottom: 6px; left: 10px; }
+  .corner-br { bottom: 6px; right: 10px; }
+  .ornament {
+    font-size: 1.6rem;
+    color: #5C4A32;
+    margin-bottom: 0.6rem;
+    letter-spacing: 0.5em;
+  }
+  .inscription {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 0.9rem;
+    letter-spacing: 0.05em;
+    color: #5C4A32;
+    margin-bottom: 1.8rem;
+  }
+  h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+    font-size: 2.8rem;
+    line-height: 1.1;
+    margin-bottom: 0.4rem;
+    color: #1E150E;
+  }
+  .tagline {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 1.25rem;
+    color: #5C4A32;
+    margin-bottom: 2rem;
+  }
+  .description {
+    font-size: 0.95rem;
+    color: #3D2E1E;
+    max-width: 400px;
+    margin: 0 auto 2rem;
+    line-height: 1.8;
+  }
+  .form-group {
+    display: flex;
+    gap: 0.5rem;
+    max-width: 380px;
+    margin: 0 auto 2rem;
+  }
+  .form-group input {
+    flex: 1;
+    padding: 0.65rem 0.9rem;
+    font-family: 'Crimson Pro', serif;
+    font-size: 0.95rem;
+    background: rgba(30, 21, 14, 0.04);
+    border: 1px solid #1E150E;
+    color: #1E150E;
+    outline: none;
+  }
+  .form-group input::placeholder { color: #8A7A66; }
+  .form-group button {
+    padding: 0.65rem 1.4rem;
+    font-family: 'Crimson Pro', serif;
+    font-weight: 600;
+    font-size: 0.9rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    background: #1E150E;
+    color: #E2D5BD;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  .form-group button:hover { background: #3D2E1E; }
+  .quote {
+    font-style: italic;
+    font-size: 0.95rem;
+    color: #5C4A32;
+    max-width: 360px;
+    margin: 0 auto 1.8rem;
+    line-height: 1.6;
+  }
+  .quote::before { content: "\201C"; }
+  .quote::after { content: "\201D"; }
+  .date {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #8A7A66;
+  }
+  @media (max-width: 520px) {
+    .plate-inner { padding: 2rem 1.4rem; }
+    h1 { font-size: 2.1rem; }
+    .form-group { flex-direction: column; }
+  }
+</style>
+</head>
+<body>
+  <div class="plate">
+    <div class="plate-inner">
+      <span class="corner corner-tl">❧</span>
+      <span class="corner corner-tr">❧</span>
+      <span class="corner corner-bl">❧</span>
+      <span class="corner corner-br">❧</span>
+      <p class="ornament">❦ ❊ ❦</p>
+      <p class="inscription">Ex bibliothēcā oriundus sum</p>
+      <h1>Save the Novels</h1>
+      <p class="tagline">The Reader Speaks.</p>
+      <p class="description">We are gathering the personal stories that live inside the books you love — the moments a novel changed your mind, broke your heart, or quietly saved your life.</p>
+      <form action="#" class="form-group">
+        <input type="email" placeholder="Your email address" required>
+        <button type="submit">Join</button>
+      </form>
+      <p class="quote">If I'm going to fail, let me be on the side of literature.</p>
+      <p class="date">Coming September 2026</p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Save the Novels</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #151210; color: #D4C8B8; font-family: 'Inter', sans-serif; font-weight: 300; min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 24px; line-height: 1.65; }
+  .frame-outer { max-width: 620px; width: 100%; border: 3px solid #C8A96E; padding: 7px; }
+  .frame-mid { border: 1px solid rgba(200,169,110,0.4); padding: 5px; }
+  .frame-inner { border: 2px solid #C8A96E; padding: 52px 44px; text-align: center; }
+  .latin-label { font-family: 'Playfair Display', serif; font-size: 10px; letter-spacing: 4px; text-transform: uppercase; color: #C8A96E; font-variant: small-caps; margin-bottom: 32px; }
+  .corner-ornament { color: #C8A96E; font-size: 18px; letter-spacing: 12px; margin: 16px 0; opacity: 0.6; }
+  h1 { font-family: 'Playfair Display', serif; font-size: 2.8rem; font-weight: 900; color: #F0E6D6; line-height: 1.1; margin-bottom: 6px; }
+  .tagline { font-family: 'Playfair Display', serif; font-size: 1.2rem; font-style: italic; color: #C8A96E; margin-bottom: 28px; }
+  .description { font-size: 0.88rem; max-width: 400px; margin: 0 auto 28px; color: #9E9183; }
+  .manifesto { font-family: 'Playfair Display', serif; font-size: 1rem; font-style: italic; color: #B8A690; max-width: 400px; margin: 0 auto 32px; }
+  .form-row { display: flex; gap: 0; max-width: 380px; margin: 0 auto 28px; }
+  .form-row input { flex: 1; padding: 11px 16px; background: #1E1A16; border: 1px solid #3A322A; color: #D4C8B8; font-family: 'Inter', sans-serif; font-size: 0.88rem; font-weight: 300; outline: none; transition: border-color 0.3s; }
+  .form-row input:focus { border-color: #C8A96E; }
+  .form-row input::placeholder { color: #5C5248; }
+  .form-row button { padding: 11px 24px; background: #C8A96E; color: #151210; border: none; font-family: 'Playfair Display', serif; font-size: 0.9rem; font-weight: 700; letter-spacing: 1px; cursor: pointer; transition: background 0.3s; }
+  .form-row button:hover { background: #DFC088; }
+  .date { font-size: 0.75rem; letter-spacing: 3px; text-transform: uppercase; color: #5C5248; margin-bottom: 8px; }
+  .footer-motto { font-family: 'Playfair Display', serif; font-size: 0.78rem; font-style: italic; color: rgba(200,169,110,0.4); margin-top: 16px; letter-spacing: 1px; }
+  @media (max-width: 520px) {
+    .frame-inner { padding: 36px 20px; }
+    h1 { font-size: 2rem; }
+    .form-row { flex-direction: column; }
+    .form-row input, .form-row button { width: 100%; }
+    .form-row button { margin-top: -1px; }
+  }
+</style>
+</head>
+<body>
+<div class="frame-outer"><div class="frame-mid"><div class="frame-inner">
+  <p class="latin-label">Ex biblioth&#x113;c&#x101; oriundus sum</p>
+  <h1>Save the Novels</h1>
+  <p class="tagline">The Reader Speaks.</p>
+  <div class="corner-ornament">&loz;</div>
+  <p class="description">A gathering place for personal stories about novels &mdash; the books that marked us, haunted us, and changed the way we see. We want to hear yours.</p>
+  <blockquote class="manifesto">&ldquo;If I&rsquo;m going to fail, let me be on the side of literature.&rdquo;</blockquote>
+  <form action="#">
+    <div class="form-row">
+      <input type="email" placeholder="Enter your email" required>
+      <button type="submit">Notify Me</button>
+    </div>
+  </form>
+  <p class="date">Coming September 2026</p>
+  <p class="footer-motto">Ex biblioth&#x113;c&#x101; oriundus sum</p>
+</div></div></div>
+</body>
+</html>

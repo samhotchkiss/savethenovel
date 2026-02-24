@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Save the Novels</title>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: #FFFFFF; color: #111;
+      font-family: 'IBM Plex Mono', monospace; font-weight: 400;
+      min-height: 100vh; display: flex; align-items: center; justify-content: center;
+      padding: 3rem 2rem; line-height: 1.7;
+    }
+
+    .container { max-width: 520px; width: 100%; text-align: center; }
+
+    .latin {
+      font-size: 0.6rem; font-weight: 300; letter-spacing: 0.2em;
+      text-transform: uppercase; color: #BBB; margin-bottom: 4rem;
+    }
+
+    h1 {
+      font-family: 'EB Garamond', serif; font-weight: 500;
+      font-size: clamp(2.8rem, 7vw, 3.6rem);
+      letter-spacing: -0.02em; margin-bottom: 0.6rem; line-height: 1.1;
+    }
+
+    .tagline {
+      font-family: 'EB Garamond', serif; font-size: 1.3rem;
+      font-style: italic; color: #555; margin-bottom: 3.5rem;
+    }
+
+    .description {
+      font-size: 0.82rem; color: #666; font-weight: 300;
+      line-height: 1.8; margin: 0 auto 3rem; max-width: 400px;
+    }
+
+    .signup-form {
+      max-width: 400px; margin: 0 auto 4rem; display: flex; gap: 0.5rem;
+    }
+
+    .signup-form input[type="email"] {
+      flex: 1; padding: 0.7rem 0.8rem; border: 1px solid #DDD;
+      background: transparent; font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.8rem; font-weight: 300; color: #111;
+      outline: none; transition: border-color 0.2s;
+    }
+
+    .signup-form input::placeholder { color: #BBB; }
+    .signup-form input:focus { border-color: #111; }
+
+    .signup-form button {
+      padding: 0.7rem 1.2rem; background: transparent; color: #111;
+      border: 1px solid #111; font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.72rem; font-weight: 500; letter-spacing: 0.06em;
+      text-transform: uppercase; cursor: pointer;
+      transition: all 0.2s; white-space: nowrap;
+    }
+
+    .signup-form button:hover { background: #111; color: #FFF; }
+
+    .divider { width: 30px; height: 1px; background: #DDD; margin: 0 auto 2.5rem; }
+
+    .manifesto {
+      font-family: 'EB Garamond', serif; font-style: italic;
+      font-size: 1rem; color: #999; margin-bottom: 3rem;
+    }
+
+    .coming-soon {
+      font-size: 0.65rem; text-transform: uppercase;
+      letter-spacing: 0.2em; color: #BBB; font-weight: 300;
+    }
+
+    @media (max-width: 500px) {
+      .latin { margin-bottom: 3rem; }
+      h1 { font-size: 2.4rem; }
+      .signup-form { flex-direction: column; }
+      .signup-form button { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <p class="latin">Ex biblioth&#x113;c&#x101; oriundus sum</p>
+    <h1>Save the Novels</h1>
+    <p class="tagline">The Reader Speaks.</p>
+    <p class="description">
+      A site gathering personal stories about the novels that changed our lives.
+    </p>
+    <form class="signup-form" action="#">
+      <input type="email" placeholder="you@email.com" required>
+      <button type="submit">Subscribe</button>
+    </form>
+    <div class="divider"></div>
+    <p class="manifesto">&ldquo;If I&rsquo;m going to fail, let me be on the side of literature.&rdquo;</p>
+    <p class="coming-soon">Coming September 2026</p>
+  </div>
+</body>
+</html>

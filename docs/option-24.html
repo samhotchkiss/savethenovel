@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Save the Novels</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,500&family=Nunito+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #0D1F15; color: #F0E8D8; font-family: 'Nunito Sans', sans-serif;
+      min-height: 100vh; display: flex; align-items: center; justify-content: center;
+      padding: 2rem; line-height: 1.7;
+    }
+    .plate {
+      max-width: 540px; width: 100%; text-align: center;
+      border: 2px solid #F0E8D8; padding: 3rem 2.5rem; position: relative;
+    }
+    .plate::before {
+      content: ''; position: absolute; inset: 6px;
+      border: 1px solid #7BA07C; pointer-events: none;
+    }
+    .plate::after {
+      content: ''; position: absolute; inset: 11px;
+      border: 1px solid rgba(123,160,124,0.25); pointer-events: none;
+    }
+    .latin {
+      font-size: 0.68rem; font-variant: small-caps; letter-spacing: 0.25em;
+      color: #F0E8D8; opacity: 0.7; margin-bottom: 1.2rem;
+    }
+    .ornament {
+      font-family: 'Cormorant Garamond', serif; font-size: 1.3rem;
+      color: #7BA07C; letter-spacing: 0.4em; margin-bottom: 1.2rem;
+    }
+    h1 {
+      font-family: 'Cormorant Garamond', serif; font-size: 2.8rem;
+      font-weight: 700; margin-bottom: 0.2rem; letter-spacing: 0.01em;
+    }
+    .tagline {
+      font-family: 'Cormorant Garamond', serif; font-size: 1.3rem;
+      font-style: italic; color: #7BA07C; margin-bottom: 1.5rem;
+    }
+    .description {
+      font-size: 0.95rem; color: rgba(240,232,216,0.65); font-weight: 300;
+      margin: 0 auto 2rem; max-width: 380px;
+    }
+    .signup-form {
+      display: flex; flex-direction: column; align-items: center;
+      gap: 0.75rem; margin-bottom: 2rem;
+    }
+    .signup-form input[type="email"] {
+      width: 100%; max-width: 300px; padding: 0.7rem 1rem; border: 1px solid #7BA07C;
+      background: rgba(123,160,124,0.08); font-family: 'Nunito Sans', sans-serif;
+      font-size: 0.9rem; color: #F0E8D8; text-align: center; outline: none;
+      transition: border-color 0.2s, background 0.2s;
+    }
+    .signup-form input::placeholder { color: rgba(240,232,216,0.35); }
+    .signup-form input:focus { background: rgba(123,160,124,0.15); border-color: #F0E8D8; }
+    .signup-form button {
+      padding: 0.6rem 2rem; background: #7BA07C; color: #0D1F15; border: none;
+      font-family: 'Nunito Sans', sans-serif; font-size: 0.8rem; font-weight: 600;
+      text-transform: uppercase; letter-spacing: 0.15em; cursor: pointer;
+      transition: background 0.2s;
+    }
+    .signup-form button:hover { background: #92B893; }
+    .manifesto {
+      font-family: 'Cormorant Garamond', serif; font-style: italic;
+      font-size: 1.05rem; color: rgba(240,232,216,0.5); margin-bottom: 1.5rem;
+    }
+    .coming-soon {
+      font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.2em;
+      color: #7BA07C; font-weight: 600; opacity: 0.6;
+    }
+    .end-mark {
+      font-family: 'Cormorant Garamond', serif; font-size: 1rem;
+      color: #7BA07C; margin-top: 1rem; letter-spacing: 0.5em; opacity: 0.5;
+    }
+    @media (max-width: 480px) {
+      .plate { padding: 2rem 1.5rem; }
+      h1 { font-size: 2.2rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="plate">
+    <p class="latin">Ex biblioth&#x113;c&#x101; oriundus sum</p>
+    <div class="ornament">&loz; &loz; &loz;</div>
+    <h1>Save the Novels</h1>
+    <p class="tagline">The Reader Speaks.</p>
+    <p class="description">
+      A gathering place for personal stories about the novels that changed our lives.
+      Every reader has a book that broke them open.
+    </p>
+    <form class="signup-form" action="#">
+      <input type="email" placeholder="your email address" required>
+      <button type="submit">Be Notified</button>
+    </form>
+    <p class="manifesto">&ldquo;If I&rsquo;m going to fail, let me be on the side of literature.&rdquo;</p>
+    <p class="coming-soon">Coming September 2026</p>
+    <div class="end-mark">&mdash;</div>
+  </div>
+</body>
+</html>
